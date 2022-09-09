@@ -2,8 +2,9 @@ package com.tossdesu.gkhonline2.data
 
 import com.tossdesu.gkhonline2.data.database.SettingsDao
 import com.tossdesu.gkhonline2.domain.SettingsRepository
+import javax.inject.Inject
 
-class SettingsRepositoryImpl(
+class SettingsRepositoryImpl @Inject constructor(
     private val settingsDao: SettingsDao
 ) : SettingsRepository {
 

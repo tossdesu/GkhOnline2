@@ -6,8 +6,9 @@ import com.tossdesu.gkhonline2.data.network.ApiService
 import com.tossdesu.gkhonline2.data.network.entity.SignInRequestBody
 import com.tossdesu.gkhonline2.domain.AccountRepository
 import com.tossdesu.gkhonline2.domain.entity.*
+import javax.inject.Inject
 
-class AccountRepositoryImpl(
+class AccountRepositoryImpl @Inject constructor(
     private val accountDao: AccountDao,
     private val apiService: ApiService
 ) : AccountRepository {
