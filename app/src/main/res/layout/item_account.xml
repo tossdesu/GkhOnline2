@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvAccount"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_height"
+    android:layout_marginStart="@dimen/card_margin_horizontal"
+    android:layout_marginTop="@dimen/card_margin_top"
+    android:layout_marginEnd="@dimen/card_margin_horizontal"
+    android:layout_marginBottom="@dimen/card_margin_bottom"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/account_card_background">
+
+        <TextView
+            android:id="@+id/tvCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_text_margin_start"
+            android:layout_marginTop="@dimen/card_company_margin_top"
+            android:layout_marginEnd="@dimen/card_text_margin_end"
+            android:layout_marginBottom="@dimen/card_company_margin_bottom"
+            android:textColor="@color/card_company_text"
+            android:textSize="@dimen/card_company_text_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/card_text_margin_end"
+            android:textColor="@color/card_contact_text"
+            android:textSize="@dimen/card_contact_text_size"
+            app:layout_constraintStart_toStartOf="@id/tvCompany"
+            app:layout_constraintTop_toBottomOf="@id/tvCompany" />
+
+        <RelativeLayout
+            android:id="@+id/rlAccountDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/card_del_start"
+            android:paddingTop="@dimen/card_del_top"
+            android:paddingEnd="@dimen/card_del_end"
+            android:paddingBottom="@dimen/card_del_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/card_del_img_width"
+                android:layout_height="@dimen/card_del_img_height"
+                android:contentDescription="@string/account_del_button_desc"
+                app:srcCompat="@drawable/ic_round_close"
+                app:tint="@color/card_del_icon" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivLoginStatus"
+            android:layout_width="@dimen/card_status_width"
+            android:layout_height="@dimen/card_status_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/card_status_margin_start"
+            android:layout_marginBottom="@dimen/card_status_margin_bottom"
+            android:contentDescription="@string/login_status_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/card_status_icon" />
+
+        <TextView
+            android:id="@+id/tvLoginTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/card_time_margin_start"
+            android:textColor="@color/card_time_text"
+            android:textSize="@dimen/card_time_text_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@id/ivLoginStatus"
+            app:layout_constraintTop_toTopOf="@id/ivLoginStatus" />
+
+        <ImageView
+            android:id="@+id/ivBuildings"
+            android:layout_width="@dimen/card_buildings_width"
+            android:layout_height="@dimen/card_buildings_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/card_buildings_margin_end"
+            android:layout_marginBottom="@dimen/card_buildings_margin_bottom"
+            android:contentDescription="@string/buildings_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_buildings"
+            app:tint="@color/card_buildings_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

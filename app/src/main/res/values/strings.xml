@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GkhOnline2</string>
+
+    <!-- Account Card in Accounts Activity -->
+    <!-- Content description -->
+    <string name="account_del_button_desc">Удалить аккаунт из приложения</string>
+    <string name="login_status_desc">Статус выполненной авторизации</string>
+    <string name="buildings_desc">Иконка зданий</string>
 </resources>
