@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Account Card in Accounts Activity -->
+    <color name="card_company_text">#E9FAFDFF</color>
+    <color name="card_contact_text">#CBF7FCFF</color>
+    <color name="card_del_icon">#E9A2DEFA</color>
+    <color name="card_status_icon">#E9B1E6FF</color>
+    <color name="card_time_text">#E9A2DEFA</color>
+    <color name="card_buildings_icon">#83D0F4</color>
 </resources>

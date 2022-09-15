@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Account Card in Accounts Activity -->
+    <dimen name="card_height">193dp</dimen>
+    <dimen name="card_margin_horizontal">13dp</dimen>
+    <dimen name="card_margin_top">10dp</dimen>
+    <dimen name="card_margin_bottom">20dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_corner_radius">13dp</dimen>
+
+    <dimen name="card_text_margin_start">15dp</dimen>
+    <dimen name="card_text_margin_end">35dp</dimen>
+    <dimen name="card_company_margin_top">15dp</dimen>
+    <dimen name="card_company_margin_bottom">3dp</dimen>
+    <dimen name="card_company_text_size">17sp</dimen>
+    <dimen name="card_contact_text_size">14sp</dimen>
+    <dimen name="card_del_start">18dp</dimen>
+    <dimen name="card_del_end">12dp</dimen>
+    <dimen name="card_del_top">12dp</dimen>
+    <dimen name="card_del_bottom">18dp</dimen>
+    <dimen name="card_del_img_width">18dp</dimen>
+    <dimen name="card_del_img_height">18dp</dimen>
+    <dimen name="card_status_width">15dp</dimen>
+    <dimen name="card_status_height">15dp</dimen>
+    <dimen name="card_status_margin_start">12dp</dimen>
+    <dimen name="card_status_margin_bottom">10dp</dimen>
+    <dimen name="card_time_margin_start">4dp</dimen>
+    <dimen name="card_time_text_size">11sp</dimen>
+    <dimen name="card_buildings_width">110dp</dimen>
+    <dimen name="card_buildings_height">110dp</dimen>
+    <dimen name="card_buildings_margin_end">15dp</dimen>
+    <dimen name="card_buildings_margin_bottom">-5dp</dimen>
+</resources>
