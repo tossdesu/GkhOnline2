@@ -5,6 +5,8 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 import com.tossdesu.gkhonline2.data.database.entity.AccountDbEntity.Companion.NAME
 import com.tossdesu.gkhonline2.domain.entity.Account
+import java.text.SimpleDateFormat
+import java.util.*
 
 @Entity(
     tableName = NAME,
@@ -29,10 +31,17 @@ data class AccountDbEntity(
         login = login,
         company = company,
         contact = contact,
-        isLogin = session.isNotEmpty(),
+        isSignIn = session.isNotEmpty(),
         session = session,
-        time = time
+        lastSignIn = convertTimestampToDate(time)
     )
+
+    private fun convertTimestampToDate(timestamp: Long): String {
+        val date = Date(timestamp)
+        val formatPattern = "dd.MM.yyyy, HH:mm"
+        val sdf = SimpleDateFormat(formatPattern, Locale.getDefault())
+        return sdf.format(date)
+    }
 
     companion object {
 
@@ -45,7 +54,11 @@ data class AccountDbEntity(
             company = account.company,
             contact = account.contact,
             session = account.session,
-            time = account.time
+            time = getTimestamp()
         )
+
+        private fun getTimestamp(): Long {
+            return Date().time
+        }
     }
 }

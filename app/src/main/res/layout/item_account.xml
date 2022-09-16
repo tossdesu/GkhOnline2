@@ -65,7 +65,7 @@
         </RelativeLayout>
 
         <ImageView
-            android:id="@+id/ivLoginStatus"
+            android:id="@+id/ivSignInStatus"
             android:layout_width="@dimen/card_status_width"
             android:layout_height="@dimen/card_status_height"
             android:layout_alignParentBottom="true"
@@ -77,7 +77,7 @@
             app:tint="@color/card_status_icon" />
 
         <TextView
-            android:id="@+id/tvLoginTime"
+            android:id="@+id/tvSignInTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -85,8 +85,8 @@
             android:textColor="@color/card_time_text"
             android:textSize="@dimen/card_time_text_size"
             android:textStyle="normal"
-            app:layout_constraintStart_toEndOf="@id/ivLoginStatus"
-            app:layout_constraintTop_toTopOf="@id/ivLoginStatus" />
+            app:layout_constraintStart_toEndOf="@id/ivSignInStatus"
+            app:layout_constraintTop_toTopOf="@id/ivSignInStatus" />
 
         <ImageView
             android:id="@+id/ivBuildings"

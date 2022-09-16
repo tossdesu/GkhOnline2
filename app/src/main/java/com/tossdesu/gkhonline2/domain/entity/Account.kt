@@ -6,7 +6,7 @@ data class Account(
     val login: String,
     val company: String,
     val contact: String,
-    val isLogin: Boolean,
+    val isSignIn: Boolean,
     val session: String,
-    val time: Long
+    val lastSignIn: String
 )
