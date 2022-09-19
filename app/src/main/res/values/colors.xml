@@ -15,4 +15,7 @@
     <color name="card_status_icon">#E9B1E6FF</color>
     <color name="card_time_text">#E9A2DEFA</color>
     <color name="card_buildings_icon">#83D0F4</color>
+
+    <!-- Add Account Button -->
+    <color name="add_account_btn">#C8529CBF</color>
 </resources>

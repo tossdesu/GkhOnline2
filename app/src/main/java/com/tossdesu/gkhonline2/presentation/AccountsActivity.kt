@@ -24,6 +24,6 @@ class AccountsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_accounts)
 
-        viewModel.signIn("login", "password")
+//        viewModel.signIn("login", "password")
     }
 }

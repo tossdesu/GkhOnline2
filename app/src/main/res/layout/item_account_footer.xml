@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/add_acc_margin_horizontal"
+    android:layout_marginEnd="@dimen/add_acc_margin_horizontal"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/add_acc_padding_bottom">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/add_acc_corner_radius"
+        app:cardElevation="@dimen/add_acc_elevation">
+
+        <RelativeLayout
+            android:layout_width="@dimen/add_acc_width"
+            android:layout_height="@dimen/add_acc_height"
+            android:background="@drawable/account_add_background"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/add_acc_img_width"
+                android:layout_height="@dimen/add_acc_img_height"
+                app:srcCompat="@drawable/ic_account_add_round"
+                app:tint="@color/add_account_btn" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
